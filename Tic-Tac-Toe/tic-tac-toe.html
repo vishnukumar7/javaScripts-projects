@@ -1,0 +1,48 @@
+<html>
+	<head>
+	<title> TIC TAC TOE</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script type = "text/javascript" src="tic-tac-toe.js"></script>
+	<link rel="stylesheet" href="tic-tac-toe.css"></link>
+	</head>
+	<body>
+		<center><label><h1>TIC TAC TOE</h1></label>		
+		<label>who play first player1(x/X) (or) player2(o/O) : <label><input type="text" size="5" id ="choose" onkeypress="call(event)"></input>
+		<label id="turn"></label>
+		<label id="match"><h4>No of Matches : 0</h4></label>
+			<table>
+				<tr>
+					<td class="player1"><h3>player 1</h3></td>
+					<td></td>
+					<td class="player2"><h3>player 2</h3></td>
+				</tr>
+				<tr>
+					<td id="player1Win" class="player1">Wins : 0</td>
+					<td></td>
+					<td id="player2Win" class="player2">Wins : 0</td>
+				</tr>
+				<tr>
+					<td id="player1Lose" class="player1">Loses : 0</td>
+					<td></td>
+					<td id="player2Lose" class="player2">Loses : 0</td>
+				</tr>
+				<tr id="game">
+					<td id="cell_row0_col0" class="cell" onclick="cell(0,0)">&nbsp;</td>
+					<td id="cell_row0_col1" class="cell" onclick="cell(0,1)">&nbsp;</td>
+					<td id="cell_row0_col2" class="cell" onclick="cell(0,2)">&nbsp;</td>
+				</tr>
+				<tr id="game">
+					<td id="cell_row1_col0" class="cell" onclick="cell(1,0)">&nbsp;</td>
+					<td id="cell_row1_col1" class="cell" onclick="cell(1,1)">&nbsp;</td>
+					<td id="cell_row1_col2" class="cell" onclick="cell(1,2)">&nbsp;</td>
+				</tr>
+				<tr id="game">
+					<td id="cell_row2_col0" class="cell" onclick="cell(2,0)">&nbsp;</td>
+					<td id="cell_row2_col1" class="cell" onclick="cell(2,1)">&nbsp;</td>
+					<td id="cell_row2_col2" class="cell" onclick="cell(2,2)">&nbsp;</td>
+				</tr>
+			</table>
+			<button id="reset" onclick="reset()">RESET</button></center>
+		</table>
+	</body>
+</html>
