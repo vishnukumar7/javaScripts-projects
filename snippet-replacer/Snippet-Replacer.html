@@ -1,0 +1,26 @@
+<html>
+	<head>
+	<title>Snippet Replacer</title>
+		<link rel="stylesheet" href="Snippet-Replacer.css">
+		<script type="text/javascript" src="Snippet-Replacer.js"></script>
+	</head>
+	<body>
+			<h1 style="color:red;"><center>Snippet Replacer</center></h1>
+			<fieldset >
+			<label><center><b>Enter the word</b></center></label><br>
+			<input class="id" type="text" size="40" id="key" ><br><br>
+			<label><center><b>Enter the replacement word</b></center></label><br>
+			<input class="value" type="text" size="40" id="value" >
+			<br><br>
+			<button class="submit" onclick="Function()">Submit</button>
+			<button onclick="cancel()">cancel</button>
+			
+			<br><br>
+			<label><center><b>Enter the Sentence</b></center></label><br>
+			<textarea class="sen" type="text" id="get" rows="10" cols="40" onkeydown="myFunction(event)"></textarea>
+			<br><br>
+			<button class="reset" onclick="reset()">reset</button>
+			<button onclick="reset_all()">reset_all_data</button>
+			</fieldset>
+	</body>
+</html>

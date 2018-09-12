@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-size:14px;
+	background-color:#808e8c;
+}
+
+.clock{
+    width:140px;
+    height:140px;
+}
+#h-hand, #m-hand, #s-hand{
+    stroke-linecap:round;
+}
+#clock-face{
+    stroke:black;
+    stroke-width:5px;
+    fill:white;
+}
+
+#h-hand{
+	 stroke:green;
+    stroke-width:6px;
+}
+
+#m-hand{
+	stroke:black;
+    stroke-width:4px;
+}
+
+#s-hand{
+	stroke:blue;
+    stroke-width:2px;
+}
+
+.time-text{
+    text-align:center;
+}
